@@ -1,0 +1,6 @@
+# Configuration for all issues
+blank_issues_enabled: false
+contact_links:
+  - name: Discord
+    url: https://discord.gg/yDnbEDH
+    description: Contact us at our Discord server in the support channel under Other Projects and tell us your issues if you prefer it
