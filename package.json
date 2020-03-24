@@ -18,7 +18,7 @@
     "dev": "NODE_ENV=development webpack --config webpack.cfg.js -w"
   },
   "dependencies": {
-    "@augu/ichigo": "1.1.2"
+    "@augu/ichigo": "1.2.0"
   },
   "devDependencies": {
     "@augu/eslint-config": "1.3.3",
