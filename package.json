@@ -31,6 +31,6 @@
     "webpack-cli": "3.3.11"
   },
   "dependencies": {
-    "@augu/immutable": "^0.1.7"
+    "@augu/immutable": "0.1.7"
   }
 }
