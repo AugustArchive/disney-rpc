@@ -18,14 +18,10 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: join(__dirname, 'build')
+    path: join(__dirname, 'public', 'js')
   },
   module: {
     rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: ['sass-loader']
-      },
       {
         exclude: /node_modules/,
         test: /\.ts?$/,
@@ -36,5 +32,8 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js']
   },
-  plugins: [...prodPlugins]
+  plugins: [...prodPlugins],
+  node: {
+    net: 'empty'
+  }
 };

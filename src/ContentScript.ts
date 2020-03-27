@@ -1,3 +1,3 @@
-import './styles/style.scss';
-
-console.log('Content script running...');
+chrome.runtime.onMessage.addListener((msg, _, send) => {
+  if (msg.event === 'DOM') send(document);
+});

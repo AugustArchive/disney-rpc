@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Disney+ Rich Presence",
+  "short_name": "Disney+",
+  "version": "1.0.0",
+  "description": "Discord Rich Presence for Disney+",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' 'sha256-...=-'; object-src 'self'",
+  "icons": {
+    "128": "./assets/icon.jpg"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://disneyplus.com/*"],
+      "js": ["js/contentscript.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
